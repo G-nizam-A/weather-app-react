@@ -13,7 +13,6 @@ A simple and user-friendly weather application that fetches and displays real-ti
 - [Usage](#usage)
 - [API Integration](#api-integration)
 - [Contributing](#contributing)
-- [License](#license)
 
 ## Features
 - Responsive user interface for easy access on various devices.
@@ -35,16 +34,29 @@ Visit the live demo of the Weather App: [https://g-nizam-a.github.io/weather-app
 ### Installation
 1. Clone the repository:
    ```sh
-   git clone https://github.com/your-username/weather-app.git
+   git clone https://github.com/your-username/weather-app-react.git
 
-1. Clone the repository:
+2. Navigate to the project directory:
    ```sh
-   git clone https://github.com/your-username/weather-app.git
+   cd weather-app
 
-1. Clone the repository:
+3. Install dependencies:
    ```sh
-   git clone https://github.com/your-username/weather-app.git
+   npm install
 
-1. Clone the repository:
+## Usage
+1. Start the development server:
    ```sh
-   git clone https://github.com/your-username/weather-app.git
+   npm start
+
+2. Open your web browser and go to http://localhost:3000 to access the Weather App
+
+## API Integration
+
+The Weather App integrates with the OpenWeatherMap API to fetch weather data. You can customize the API endpoint and parameters in the getWeather function within the App.js file.
+https://home.openweathermap.org/api_keys
+To use your own API key, replace API_KEY in the api.js file with your OpenWeatherMap API key.
+
+## Contributing
+
+Contributions to this project are welcome! Feel free to open issues and submit pull requests for any improvements, bug fixes, or new features.
