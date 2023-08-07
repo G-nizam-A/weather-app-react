@@ -23,13 +23,13 @@ A simple and user-friendly weather application that fetches and displays real-ti
 - Error handling for empty city input.
 
 ## Demo
-Visit the live demo of the Weather App: [https://g-nizam-a.github.io/weather-app](https://g-nizam-a.github.io/weather-app)
+Visit the live demo of the Weather App: [https://g-nizam-a.github.io/weather-app](https://g-nizam-a.github.io/weather-app-react/)
 
 
 ## Getting Started
 ### Prerequisites
 - Node.js v16.14.2
-- npm v8.5.0)
+- npm v8.5.0
 - React v18.2.0
 
 ### Installation
