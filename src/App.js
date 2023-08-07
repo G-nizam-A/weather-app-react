@@ -1,25 +1,26 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
+import WeatherForm from './components/WeatherForm';
+import WeatherCard from './components/WeatherCard';
+import { API_KEY, API_URL } from './api';
 
-function App() {
+const App = () => {
+  const [weatherData, setWeatherData] = useState(null);
+
+  // fetch weather data
+  const getWeather = async (city) => {
+    const response = await fetch(`${API_URL}?q=${city}&appid=${API_KEY}&units=metric`);
+    const data = await response.json();
+    setWeatherData(data);
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Weather App</h1>
+      <WeatherForm getWeather={getWeather} />
+      {weatherData && <WeatherCard weatherData={weatherData} />}
     </div>
   );
-}
+};
 
 export default App;
